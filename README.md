@@ -3,8 +3,9 @@
 ### 1. Install Homebrew and Command Line (autoinstall homebrew): 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-### 2. Install Nginx: 
-brew install nginx php: brew install php
+### 2. Install Nginx and PHP: 
+brew install nginx php
+brew install php
 
 ### 3. Add avaliable folder nginx: 
 mkdir -p /usr/local/etc/nginx/sites-{enabled,available} 
