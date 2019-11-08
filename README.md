@@ -5,6 +5,7 @@
 
 ### 2. Install Nginx and PHP: 
 brew install nginx php
+
 brew install php
 
 ### 3. Add avaliable folder nginx: 
