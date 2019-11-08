@@ -22,6 +22,8 @@ ln -s ../sites-available/default-ssl.conf
 
 ### 4. Paste config in /usr/local/etc/nginx/sites-available/default.conf
 
+Change the USERNAME in this file to your
+
 ### 5. Paste config in /usr/local/etc/nginx/php-fpm.conf
 
 ### 6. Paste config in /usr/local/etc/nginx/nginx.conf
