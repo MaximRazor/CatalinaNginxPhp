@@ -1,9 +1,10 @@
-# Installation Guide Nginx + PHP on Mac OS Catalina
+# Installation Guide NGINX + PHP on Mac OS Catalina
 
-### 1. Install Homebrew and Command Line (autoinstall homebrew): 
+### 1. Install Homebrew and Command Line (automatically when install homebrew): 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-### 2. Install Nginx and PHP: 
+### 2. Install NGINX and PHP: 
+
 brew install nginx php
 
 brew install php
@@ -15,7 +16,7 @@ cd /usr/local/etc/nginx/sites-enabled
 
 ln -s ../sites-available/default.conf 
 
-**and use ssl to:** 
+**and if using ssl then:** 
 
 ln -s ../sites-available/default-ssl.conf
 
@@ -25,7 +26,9 @@ ln -s ../sites-available/default-ssl.conf
 
 ### 6. Paste config in /usr/local/etc/nginx/nginx.conf
 
-And else block 9000 port change on file /usr/local/etc/php/7.3/php-fpm.d/www.conf in line listen = 127.0.0.1:9090
+If blocked 9000 port change on file /usr/local/etc/php/7.3/php-fpm.d/*.conf in line:
+
+listen = 127.0.0.1:9090
 
 ### 7. Start services:
 
@@ -34,4 +37,4 @@ brew services start php
 brew services start nginx
 
 
-### Test you localhost. Profit 🎉
+### Test you http://localhost. Profit 🎉
